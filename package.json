@@ -1,0 +1,17 @@
+{
+  "name": "CtM-Bike-Journey",
+  "version": "0.0.1",
+  "description": "The front end of the CompareTheMarket motorcycle journey",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Sear",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.0.0"
+  }
+}
