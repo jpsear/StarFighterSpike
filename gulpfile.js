@@ -6,7 +6,7 @@ var rename = require("gulp-rename");
 var concat = require('gulp-concat');
 
 gulp.task('html', function() {
-  gulp.src(['src/index.html', 'src/quoteDetails.html', 'src/prices.html'])
+  gulp.src('src/index.html')
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -15,7 +15,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('views', function() {
-  gulp.src(['src/views/*.html'])
+  gulp.src('src/views/*.html')
     .pipe(gulp.dest('prod/views'));
 });
 

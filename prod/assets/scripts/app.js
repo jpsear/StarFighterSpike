@@ -44,6 +44,7 @@ StarFighter.controller('pricePageController', function($scope, $routeParams, $lo
 
     $scope.heading = 'Price Page';
 });
+
 StarFighter.controller('quoteQuestionsController', function($scope, $routeParams, $location, answerService) {
     $scope.params = $routeParams;
     $scope.$location = $location;
@@ -51,14 +52,12 @@ StarFighter.controller('quoteQuestionsController', function($scope, $routeParams
 
     $scope.heading = 'Quote Questions';
     // $scope.answers = answerService.answerData;
-    console.log(answerService.answerData);
-    answerService.addAnswer('price', 3000);
-    console.log(answerService.answerData);
 });
 
 StarFighter.controller('starFighterController', function($scope, $route, $routeParams, $location, answerService) {
     $scope.heading = 'Star Fighter';
 });
+
 StarFighter.controller('startPageController', function($scope, $route, $routeParams, $location, answerService) {
     $scope.$route = $route;
     $scope.$location = $location;
